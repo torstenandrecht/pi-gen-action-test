@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: usimd/pi-gen-action@v1
-        with:
-          image-name: test
-          verbose-output: true
+      with:
+        image-name: test
+        verbose-output: true
     - uses: usimd/pi-gen-action@v1
       with:
       # Compression to apply on final image (either "none", "zip", "xz" or "gz").
