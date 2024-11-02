@@ -6,6 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: usimd/pi-gen-action@v1
+        with:
+          image-name: test
+          verbose-output: true
+    - uses: usimd/pi-gen-action@v1
       with:
       # Compression to apply on final image (either "none", "zip", "xz" or "gz").
       compression: zip
@@ -132,11 +136,3 @@ jobs:
 
       # Password of default wifi network to connect to.
       wpa-password: ''
-jobs:
-  pi-gen-verbose:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: usimd/pi-gen-action@v1
-        with:
-          image-name: test
-          verbose-output: true
