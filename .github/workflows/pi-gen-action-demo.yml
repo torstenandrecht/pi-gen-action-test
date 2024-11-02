@@ -1,5 +1,5 @@
 name: pi-gen-action
-  uses: usimd/pi-gen-action@v1.9.0
+uses: usimd/pi-gen-action@v1.9.0
   with:
     # Compression to apply on final image (either "none", "zip", "xz" or "gz").
     compression: zip
