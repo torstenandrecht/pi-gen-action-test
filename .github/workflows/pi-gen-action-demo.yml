@@ -132,3 +132,11 @@ jobs:
 
       # Password of default wifi network to connect to.
       wpa-password: ''
+jobs:
+  pi-gen-verbose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: usimd/pi-gen-action@v1
+        with:
+          image-name: test
+          verbose-output: true
