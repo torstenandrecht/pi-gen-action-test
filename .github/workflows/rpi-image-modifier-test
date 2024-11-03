@@ -4,8 +4,8 @@ on:
 
 jobs:
   modify-rpi-image:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
     steps:
       -
         name: Checkout repository
