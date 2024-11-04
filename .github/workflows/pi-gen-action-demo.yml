@@ -73,7 +73,7 @@ jobs:
         increase-runner-disk-size: false
 
         # Default keyboard keymap.
-        keyboard-keymap: de
+        keyboard-keymap: gb
 
         # Default keyboard layout.
         keyboard-layout: English (UK)
