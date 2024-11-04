@@ -11,7 +11,7 @@ jobs:
     - uses: usimd/pi-gen-action@v1
       with:
         # Compression to apply on final image (either "none", "zip", "xz" or "gz").
-        compression: zip
+        compression: xz
 
         # Compression level to be used. From 0 to 9 (refer to the tool man page for more 
         # information on this. Usually 0 is no compression but very fast, up to 9 with the 
@@ -33,7 +33,7 @@ jobs:
         enable-noobs: false
 
         # Enable SSH access to Pi.
-        enable-ssh: 0
+        enable-ssh: 1
 
         # If this feature is enabled, the action will configure pi-gen to not export any 
         # stage as image but the last one defined in property 'stage-list'. This is 
@@ -59,10 +59,10 @@ jobs:
         github-token: ${{ github.token }}
 
         # Host name of the image.
-        hostname: raspQberry-two
+        hostname: rasqberry-two
 
         # Final image name.
-        image-name: 'my-image-name'
+        image-name: 'rasqberry-$RELEASE-$ARCH'
 
         # Enabling this option will remove plenty of components from the GitHub Actions 
         # runner that are not mandatory pre-requisites for a (vanilla) pi-gen build. This 
@@ -82,7 +82,7 @@ jobs:
         locale: en_GB.UTF-8
 
         # Password of the intial user account, locked if empty.
-        password: 'rasqberry'
+        password: 'Qiskit1!'
 
         # Path where selected pi-gen ref will be checked out to. If the path does not yet 
         # exist, it will be created (including its parents).
@@ -93,11 +93,11 @@ jobs:
         pi-gen-release: Raspberry Pi reference
 
         # GitHub repository to fetch pi-gen from, must be a fork from RPi-Distro/pi-gen.
-        pi-gen-repository: RPi-Distro/pi-gen
+        pi-gen-repository: JanLahmann/RasQberry-pi-gen
 
         # Release version of pi-gen to use. This can both be a branch or tag name known in 
         # the pi-gen repository.
-        pi-gen-version: arm64
+        pi-gen-version: 30-sw-platform
 
         # Setting to `1` will disable password authentication for SSH and enable public 
         # key authentication. Note that if SSH is not enabled this will take effect when 
