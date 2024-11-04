@@ -1,10 +1,8 @@
 name: learn-github-actions
-
 run-name: ${{ github.actor }} creating pi-image
 on: [push]
-
 jobs:
-  check-bats-version:
+  create-rasqberry-image:
     runs-on: ubuntu-latest 
     # runs-on: self-hosted
     steps:
