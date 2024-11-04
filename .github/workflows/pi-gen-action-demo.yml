@@ -95,7 +95,7 @@ jobs:
 
         # Release version of pi-gen to use. This can both be a branch or tag name known in 
         # the pi-gen repository.
-        pi-gen-version: 30-sw-platform
+        pi-gen-version: arm64
 
         # Setting to `1` will disable password authentication for SSH and enable public 
         # key authentication. Note that if SSH is not enabled this will take effect when 
