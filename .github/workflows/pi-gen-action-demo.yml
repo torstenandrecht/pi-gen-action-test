@@ -144,8 +144,6 @@ jobs:
 
         # Password of default wifi network to connect to.
         wpa-password: ''
-        
-        verbose-output: true
   pi-gen-upload-image:
     runs-on: ubuntu-latest
     steps:
