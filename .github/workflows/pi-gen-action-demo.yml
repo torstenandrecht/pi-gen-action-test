@@ -64,11 +64,11 @@ jobs:
 
         # Enabling this option will remove plenty of components from the GitHub Actions 
         # runner that are not mandatory pre-requisites for a (vanilla) pi-gen build. This 
-        # shall increase the available disk space so that also large images can be 
+        # shall in# crease the available disk space so that also large images can be 
         # compiled on a free GHA runner (benchmark is the full image including a desktop 
         # environment). If any packages are missing during the build consider adding them 
         # to the `extra-host-dependencies` list.
-        increase-runner-disk-size: false
+        # increase-runner-disk-size: false
 
         # Default keyboard keymap.
         keyboard-keymap: gb
@@ -100,13 +100,13 @@ jobs:
         # Setting to `1` will disable password authentication for SSH and enable public 
         # key authentication. Note that if SSH is not enabled this will take effect when 
         # SSH becomes enabled.
-        # pubkey-only-ssh: 0
+        pubkey-only-ssh: 0
 
         # Setting this to a value will make that value the contents of the 
         # FIRST_USER_NAME's ~/.ssh/authorized_keys. Obviously the value should therefore 
         # be a valid authorized_keys file. Note that this does not automatically enable 
         # SSH.
-        # pubkey-ssh-first-user: ''
+        pubkey-ssh-first-user: ''
 
         # The release version to build images against. Valid values are jessie, stretch, 
         # buster, bullseye, bookworm, and testing.
@@ -132,8 +132,9 @@ jobs:
         username: rasqberry
 
         # Print all output from pi-gen.
-        verbose-output: false
-
+        verbose-output: true
+        # verbose-output: false
+        
         # Wifi country code of default network to connect to.
         wpa-country: ''
 
