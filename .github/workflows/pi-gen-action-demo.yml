@@ -12,8 +12,6 @@ jobs:
       with:
         image-name: test
         verbose-output: true
-
-jobs:
   pi-gen-upload-image:
     runs-on: ubuntu-latest
     steps:
