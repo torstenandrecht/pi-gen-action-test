@@ -1,6 +1,13 @@
+# name of the workflow
 name: learn-github-actions
+
+# the name for workflow runs generated from the workflow
 run-name: ${{ github.actor }} creating pi-image
+
+# to automatically trigger a workflow (e.g. a push is made to any branch in the workflow's repository
+)
 on: [push]
+
 jobs:
   create-rasqberry-image:
     runs-on: ubuntu-latest 
@@ -143,7 +150,6 @@ jobs:
 
         # Password of default wifi network to connect to.
         wpa-password: ''
-jobs:
   pi-gen-upload-image:
     runs-on: ubuntu-latest
     steps:
