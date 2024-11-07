@@ -4,8 +4,7 @@ name: learn-github-actions
 # the name for workflow runs generated from the workflow
 run-name: ${{ github.actor }} creating pi-image
 
-# to automatically trigger a workflow (e.g. a push is made to any branch in the workflow's repository
-)
+# to automatically trigger a workflow (e.g. a push is made to any branch in the workflow's repository)
 on: [push]
 
 jobs:
