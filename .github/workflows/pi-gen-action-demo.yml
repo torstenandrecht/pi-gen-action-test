@@ -1,8 +1,8 @@
 # name of the workflow
-name: rasQberry-github-action
+name: rasQberry-two-github-action
 
 # the name for workflow runs generated from the workflow
-run-name: ${{ github.actor }} creating rasQberry pi-image
+run-name: ${{ github.actor }} creating rasQberry-two pi-image
 
 # trigger a workflow on push made to any branch in the workflow's repository
 on: [push]
