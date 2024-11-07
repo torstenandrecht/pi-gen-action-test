@@ -1,5 +1,5 @@
 # name of the workflow
-name: rasQberry-github-actions
+name: rasQberry-github-action
 
 # the name for workflow runs generated from the workflow
 run-name: ${{ github.actor }} creating rasQberry pi-image
@@ -8,12 +8,13 @@ run-name: ${{ github.actor }} creating rasQberry pi-image
 on: [push]
 
 jobs:
-  create-rasqberry-image:
+  create-rasqberry-two-image:
     runs-on: ubuntu-latest 
     # runs-on: self-hosted
     steps:
       - uses: usimd/pi-gen-action@v1  
-        with:
+        #  provide a map of inputs that are passed to the called workflow.
+        with: 
           # Compression to apply on final image (either "none", "zip", "xz" or "gz").
           compression: xz
 
@@ -63,10 +64,10 @@ jobs:
           github-token: ${{ github.token }}
 
           # Host name of the image.
-          hostname: rasqberry-two
+          hostname: rasQberry-two
 
           # Final image name.
-          image-name: 'rasqberrytwo'
+          image-name: 'rasQberrytwo'
 
           # Enabling this option will remove plenty of components from the GitHub Actions 
           # runner that are not mandatory pre-requisites for a (vanilla) pi-gen build. This 
@@ -151,5 +152,5 @@ jobs:
           wpa-password: ''
       - uses: actions/upload-artifact@v3
         with:
-          name: pi-gen-image
+          name: rasQberry-two-image
           path: ${{ steps.build.outputs.image-path }}
