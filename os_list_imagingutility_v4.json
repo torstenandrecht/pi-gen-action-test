@@ -11,7 +11,7 @@
         "matching_type": "inclusive"
       },
       {
-        "name": "Raspberry Pi 5 TEST",
+        "name": "Raspberry Pi 5",
         "tags": [
           "pi5-64bit",
           "pi5-32bit"
