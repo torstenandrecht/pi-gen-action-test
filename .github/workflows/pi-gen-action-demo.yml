@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: usimd/pi-gen-action@v1  
         #  provide a map of inputs that are passed to the called workflow.
+        id: build
         with: 
           # Compression to apply on final image (either "none", "zip", "xz" or "gz").
           compression: xz
