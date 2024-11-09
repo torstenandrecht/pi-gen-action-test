@@ -46,7 +46,7 @@ jobs:
           # helpful when building a single image flavor (in contrast to building a 
           # lite/server and full-blown desktop image), since it speeds up the build process 
           # significantly.
-          export-last-stage-only: true
+          export-last-stage-only: false
 
           # Comma or whitespace separated list of additional packages to install on host 
           # before running pi-gen. Use this list to add any packages your custom stages may 
