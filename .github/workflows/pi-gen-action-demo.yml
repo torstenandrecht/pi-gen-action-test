@@ -142,8 +142,8 @@ jobs:
           username: rasqberry
   
           # Print all output from pi-gen.
-          verbose-output: true
-          # verbose-output: false
+          # verbose-output: true
+          verbose-output: false
         
           # Wifi country code of default network to connect to.
           # wpa-country: ''
