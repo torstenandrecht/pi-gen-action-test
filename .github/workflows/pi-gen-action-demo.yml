@@ -17,12 +17,12 @@ jobs:
         id: build
         with: 
           # Compression to apply on final image (either "none", "zip", "xz" or "gz").
-          # compression: xz
+          compression: xz
 
           # Compression level to be used. From 0 to 9 (refer to the tool man page for more 
           # information on this. Usually 0 is no compression but very fast, up to 9 with the 
           # best compression but very slow).
-          # compression-level: 6
+          compression-level: 6
 
           # Disable the renaming of the first user during the first boot. This make it so 
           # 'username' stays activated. 'username' must be set for this to work. Please be 
@@ -46,7 +46,7 @@ jobs:
           # helpful when building a single image flavor (in contrast to building a 
           # lite/server and full-blown desktop image), since it speeds up the build process 
           # significantly.
-          # export-last-stage-only: true
+          export-last-stage-only: true
 
           # Comma or whitespace separated list of additional packages to install on host 
           # before running pi-gen. Use this list to add any packages your custom stages may 
@@ -79,13 +79,13 @@ jobs:
           # increase-runner-disk-size: false
 
           # Default keyboard keymap.
-          # keyboard-keymap: gb
+          keyboard-keymap: gb
 
           # Default keyboard layout.
-          # keyboard-layout: English (UK)
+          keyboard-layout: English (UK)
   
           # Default locale of the system image.
-          # locale: en_GB.UTF-8
+          locale: en_GB.UTF-8
 
           # Password of the intial user account, locked if empty.
           password: 'Qiskit1!'
