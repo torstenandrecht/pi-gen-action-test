@@ -161,7 +161,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file: "*.xz"
+          file: ${{ steps.build.outputs.image-path }}+"/"+"*.xz"
           tags: true
           draft: true
           overwrite: true
