@@ -136,7 +136,7 @@ jobs:
           stage-list: stage0 stage1 stage2 stage3 stage4 stage5
 
           # System timezone.
-          timezone: Europe/London
+          # timezone: Europe/London
 
           # Name of the initial user account.
           username: rasqberry
